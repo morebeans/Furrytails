@@ -1,0 +1,135 @@
+body{
+    background-color: #DFDBE5;
+}
+.bgimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: -1000;
+    opacity: 0.3;
+}
+
+.service-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.form-main-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+.sidebar {
+    height: 100vh;
+    width: 220px; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: #cab78a; 
+    color: white;
+    padding-top: 20px;
+}
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 25px;
+    text-align: left;
+    color: black;
+    cursor: pointer;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: color 0.15s ease;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar ul li a:hover {
+    color: white;
+}
+
+.content {
+    margin-left: 250px; 
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+h1 {
+    color:black;
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+@media (max-width: px) {
+    nav {
+        padding: 15px; 
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+
+    .nav-links li {
+        margin: 10px 0; 
+    }
+
+    .hamburger {
+        display: block; 
+    }
+
+    #reservationForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .bgimage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: -1000;
+        opacity: 0.3;
+    }
+}

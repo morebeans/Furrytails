@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginpage.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h2>Admin</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#" class="menu-item active">Dashboard</a></li>
+            <li><a href="#" class="menu-item">Profile</a></li>
+            <li><a href="#" class="menu-item">Settings</a></li>
+            <div class="loginreg-container">
+                <li><a onclick="appearForm()">Appointment</a></li>
+            </div>
+            <li><a href="#" class="menu-item">Notifications</a></li>
+            <li><a href="#" class="menu-item">Messages</a></li>
+            <li><a href="#" class="menu-item">Log Out</a></li>
+        </ul>
+    </nav>
+    <div>
+        <div class="bgimage">
+            <img src="image/lgbgpage.jpg" alt="">
+        </div>
+        <div class="content">
+            <h1>Welcome to FuryTails</h1>
+            <p>Feel ko cute tayo together</p>
+        </div>
+        <div class="form-main-container">
+            <div class="form-container" id="form">
+                <form action="signup.php" id="reservationForm" method="post">
+    
+                    <div class="pet-info-container">
+                        <h2>Pet Information</h2>
+                        <p for="petName">Pet Name:</p>
+                        <input type="text" id="petName" name="petname" required>
+            
+                        <p for="petType">Type of Pet:</p>
+                        <select id="petType" name="typeofpet" required>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                        </select>
+            
+                        <p for="breed">Breed:</p>
+                        <input type="text" id="breed" name="breed" required>
+            
+                        <p for="age">Age:</p>
+                        <input type="number" id="age" name="age" required>
+            
+                        <p for="weight">Weight (lbs):</p>
+                        <input type="number" id="weight" name="weight" required>
+            
+                        <p for="gender">Gender:</p>
+                        <select id="gender" name="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    
+                    <div class="reservation-form-container">
+                        <h2>Reservation Details</h2>
+                    
+                        <p for="serviceType">Type of Service:</p>
+                        <select id="serviceType" required>
+                            <option value="Hotel">Hotel</option>
+                            <option value="Grooming">Grooming</option>
+                        </select>
+                        
+                        <p for="checkIn">Check-in Date:</p>
+                        <input type="date" id="checkIn" required>
+            
+                        <p for="checkOut">Check-out Date:</p>
+                        <input type="date" id="checkOut" required>
+            
+                        <button name="signup" type="submit">Submit Reservation</button>
+                        <button onclick="hideForm() " class="back-btn">Back</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="form.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
